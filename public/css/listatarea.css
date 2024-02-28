@@ -1,0 +1,119 @@
+:root{
+    --primary: #A5C992;
+    --secundary: #D33F49;
+    --light: #fff;
+    --dark: #000;
+    --diabled: #e7e7e7;
+}
+
+body{
+    margin: 0;
+    background: linear-gradient(
+            200deg,
+            rgb(255, 255, 253)0%,
+         rgb(132, 228, 214) 51%,
+         rgb(43, 213, 108)100%
+        );
+    
+}
+
+*::first-letter{
+    text-transform: capitalize;
+}
+
+.roundborder{
+    border-radius: 5px;
+}
+
+.list{
+    margin: 271px auto;
+    padding: 25px;
+    background-color: var(--light);
+    width: 100%;
+    max-width: 600px;
+    
+}
+
+.date{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dateright{
+    display: flex;
+    align-items: center;
+}
+
+#datenumber{
+    font-size: 50px;
+}
+
+#datetext{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#datemonth,
+#datenumber,
+#datetext{
+    font-weight: bold;
+}
+
+#datemonth,
+#dateyear{
+    margin-left: 7px;
+    font-size: 20px;
+}
+
+form{
+    margin: 20px 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 35px auto;
+    grid-column-gap: 15px ;
+}
+
+input{
+    border: none;
+    padding-left: 10px;
+    background-color: var(--diabled);
+}
+
+input:focus{
+    outline: none;
+}
+
+.addTaskButton,
+.orderbutton{
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.addTaskButton{
+    height: 35px;
+    border: 50%;
+    font-size: 18px;
+    background-color: var(--diabled);
+}
+
+.orderbutton{
+    background-color: var(--secundary);
+    color: var(--light);
+}
+
+.task{
+    background-color: var(--primary);
+    padding: 15px;
+    margin-top: 15px;
+    color: var(--light);
+    cursor: pointer;
+}
+
+.done{
+    background-color: var(--diabled);
+    text-decoration: line-through;
+    color: var(--dark);
+}
+

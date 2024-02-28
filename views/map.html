@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/css/menus.css">
+    <link rel="stylesheet" href="../public/css/map.css?v=<?php echo(rand()); ?>" />
+
+    <!-- css leafletjs -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+
+    <link rel="stylesheet" href="../Leaflet-MiniMap-master/dist/Control.MiniMap.min.css">
+    <!-- fin -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+<!-- lista -->
+
+
+<!-- fin -->
+</head>
+<body>
+    <select class="opciones" name="select-location" id="select-location">
+        <option value="-1">Paises</option>
+        <option value="61.52401,105.318756">Rusia</option>
+        <option value="-75.250973,-0.071389">Antártida</option>
+        <option value="56.130366,-106.346771">Canadá</option>
+        <option value="35.86166,104.195397">China</option>
+        <option value="37.09024,-95.712891">Estados Unidos</option>
+        <option value="-14.235004,-51.92528">Brasil</option>
+        <option value="-25.274398,133.775136">Australia</option>
+        <option value="20.593684,78.96288">India</option>
+        <option value="-38.416097,-63.616672">Argentina</option>
+        <option value="48.019573,66.923684">Kazajistán</option>
+        <option value="18.735693,-70.162651">Republica Dominicana</option>
+        </select>
+
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Personal Blog</a></div>
+            <ul class="links">
+                <li><a href="../index.php">Home</a></li>
+                <li><a href="#">Proyects</a></li>
+                <li><a href="views/Formulario.php">blog</a></li>
+                <li><a href="#">others</a></li>
+            </ul>
+            <a href="#" class="actionbtn">Contact</a>
+            <div class="toggle"><i class="fa-solid fa-bars"></i></div>
+        </div>
+
+        <div class="dropdownmenu">
+            <li><a href="../index.php">Home</a></li>
+                <li><a href="#">Proyects</a></li>
+                <li><a href="views/Formulario.php">blog</a></li>
+                <li><a href="#">others</a></li>
+                <li><a href="#" class="actionbtn">Contact</a></li>
+        </div>
+    </header>
+
+    <!-- mapa -->
+    <div id="map">
+
+    </div>
+<!-- fin -->
+
+    
+<!-- js leaflets -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+crossorigin=""></script>
+
+<script src="../Leaflet-MiniMap-master/dist/Control.MiniMap.min.js"></script>
+
+<script src="../layer/barrios.js"></script>
+<!-- fin -->
+    <script src="../public/js/menus.js"></script>
+    <script src="../public/js/map.js?v=<?php echo(rand()); ?>"></script>
+</body>
+</html>

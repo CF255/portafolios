@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/css/menus.css">
+    <link rel="stylesheet" href="../public/css/paint.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Personal Blog</a></div>
+            <ul class="links">
+                <li><a href="../index.php">Home</a></li>
+                <li><a href="#">Proyects</a></li>
+                <li><a href="#">others</a></li>
+                <li><a href="#">others</a></li>
+            </ul>
+            <a href="#" class="actionbtn">Contact</a>
+            <div class="toggle"><i class="fa-solid fa-bars"></i></div>
+        </div>
+
+        <div class="dropdownmenu">
+            <li><a href="../index.php">Home</a></li>
+                <li><a href="#">Proyects</a></li>
+                <li><a href="#">others</a></li>
+                <li><a href="#">others</a></li>
+                <li><a href="#" class="actionbtn">Contact</a></li>
+        </div>
+    </header>
+
+    <div class="container-paint">
+        <section class="tools-board" >
+            <div class="row">
+                <label for="" class="tittle">Shapes</label>
+                <ul class="options">
+                    <li class="option tool" id="rectangle">
+                        <img src="/public/src/rectangulo.png" alt="">
+                        <span>Rectangulo</span>
+                    </li>
+                    <li class="option tool" id="circle">
+                        <img src="/public/src/circulo.png" alt="">
+                        <span>Circulo</span>
+                    </li>
+                    <li class="option tool" id="line">
+                        <img src="/public/src/line.png" alt="">
+                        <span>Linea</span>
+                    </li>
+                    <li class="option tool" id="triangle">
+                        <img src="/public/src/triangulo.png" alt="">
+                        <span>Triangulo</span>
+                    </li>
+                    <li class="option tool" id="">
+                       <input type="checkbox" id="fill-color">
+                       <label for="fill-color">Fill Color</label>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="row">
+                <label for="" class="tittle">Options</label>
+                <ul class="options">
+                    <li class="option active tool" id="brush">
+                        <img src="/public/src/pincel.png" alt="">
+                        <span>Pincel</span>
+                    </li>
+                    <li class="option tool" id="eraser">
+                        <img src="/public/src/borra.png" alt="">
+                        <span>Borra</span>
+                    </li>
+                    <li class="option">
+                       <input type="range" id="size-slider" min="1" max="30" value="5">
+                       
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="row colors">
+                <label for="" class="tittle">Colors</label>
+                <ul class="options">
+                   <li class="option"></li>
+                   <li class="option selected"></li>
+                   <li class="option"></li>
+                   <li class="option"></li>
+                   <li class="option"></li>
+                   <li class="option "></li>
+                   <li class="option"></li>
+                   <li class="option"></li>
+                   <li class="option"></li>
+                   <li class="option"></li>
+                   <li class="option"></li>
+                   <li class="option">
+                    <input type="color" id="color-picker" value="#0018ee">
+                   </li>
+                </ul>
+        
+            </div>
+
+            <div class="row buttons">
+              <button class="clear-canvas">Limpiar panel</button>
+              <button class="save-img">Guardar imagen</button>
+            </div>
+        </section>
+        <section class="drawing-board">
+            <canvas></canvas>
+        </section>
+    </div>
+
+
+    <script src="../public/js/menus.js"></script>
+    <script src="../public/js/paint.js"></script>
+</body>
+</html>

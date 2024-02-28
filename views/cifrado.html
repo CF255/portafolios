@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado C</title>
+    <link rel="stylesheet" href="../public/css/cifrado.css">
+    <link rel="stylesheet" href="../public/css/menus.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Personal Blog</a></div>
+            <ul class="links">
+                <li><a href="../index.php">Home</a></li>
+                <li><a href="#">Proyects</a></li>
+                <li><a href="#">others</a></li>
+                <li><a href="#">others</a></li>
+            </ul>
+            <a href="#" class="actionbtn">Contact</a>
+            <div class="toggle"><i class="fa-solid fa-bars"></i></div>
+        </div>
+
+        <div class="dropdownmenu">
+            <li><a href="../index.php">Home</a></li>
+                <li><a href="#">Proyects</a></li>
+                <li><a href="#">others</a></li>
+                <li><a href="#">others</a></li>
+                <li><a href="#" class="actionbtn">Contact</a></li>
+        </div> 
+    </header>
+
+    <main>
+        <h1>Cifrador Cesar</h1>
+        <form id="cifrado" autocomplete="off">
+            <input type="text" id="input-original" spellcheck="false"  placeholder="Ingrese el texto" name="text">
+        </form>
+
+        <div id="resultado"></div>
+        <div class="rango">
+            <input type="range" id="rango" value="10" min="1" max="20" oninput="this.nextElementSibling.value = this.value" >
+        <output>10</output>
+        </div> 
+    </main>
+
+    
+
+
+
+
+    <script src="../public/js/cifrado.js" type="text/javascript" defer></script>
+    <script src="../public/js/menus.js"></script>
+</body>
+</html>

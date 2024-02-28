@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="../public/css/menus.css?v=<?php echo(rand()); ?>" />
+    <link rel="stylesheet" href="../public/css/clima.css?v=<?php echo(rand()); ?>" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="
+https://cdn.jsdelivr.net/npm/swiper@9.4.1/modules/scrollbar/scrollbar.min.css
+" rel="stylesheet">
+</head>
+<body onload="onLoad()">
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Personal Blog</a></div>
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Proyects</a></li>
+                <li><a href="views/Formulario.php">blog</a></li>
+                <li><a href="#">others</a></li>
+            </ul>
+            <a href="#" class="actionbtn">Contact</a>
+            <div class="toggle"><i class="fa-solid fa-bars"></i></div>
+        </div>
+
+        <div class="dropdownmenu">
+            <li><a href="#">Home</a></li>
+                <li><a href="#">Proyects</a></li>
+                <li><a href="views/Formulario.php">blog</a></li>
+                <li><a href="#">others</a></li>
+                <li><a href="#" class="actionbtn">Contact</a></li>
+        </div>
+    </header>
+
+    
+
+ 
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="enter city name" spellcheck="false">
+            <button>Q</button>
+        </div>  
+
+        <div class="col2">
+            <p class="date">Fecha</p>
+            <p class="date" id="date"></p>
+            
+        </div>
+            
+            
+
+        <div class="weater">
+            <img src="../public/src/clima.png" class="weather-icon" alt="">
+            <div id="description"></div>
+
+            <div class="temp">
+                <h1 id="temperature"></h1>
+                <h1>°C</h1>
+            </div>
+
+            
+
+            <h2 class="city"id="location"></h2> 
+            <div class="details">
+                <div class="col">
+                    <img src="../public/src/humedad.png">
+                    <div>
+                        <p class="humidity" id="humidity"></p>
+                        <p>humidity</p>
+                    </div>
+                </div>
+                    <div class="col">
+                        <img src="../public/src/wind.png" >
+                        <div>
+                            <p class="wind" id="pressure"></p>
+                            <p>pressure</p>
+                        </div>
+                </div>
+            
+        </div>
+    </div>
+</div> 
+ 
+
+
+   
+    <script src="../public/js/menus.js"></script>
+
+   <!--  <script src="../public/js/clima.js?v=<?php echo(rand()); ?>"></script> -->
+    <script src="../public/js/clima.js"></script>
+</body>
+</html>

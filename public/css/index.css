@@ -1,0 +1,527 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    min-height: 180vh;
+    background-color: #efefefa9;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to left top, rgb(255, 255, 255), rgb(114, 114, 114));
+    padding: 0 35px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+a:hover{
+    color: rgb(41, 69, 70);
+}
+
+
+/* header */
+header{
+    
+    position: absolute;
+    top: 0;
+    padding: 0.5rem;
+    background: linear-gradient(
+        180deg,
+     rgb(118, 193, 196) 0%,
+     rgb(98, 160, 161) 51%,
+     rgb(66, 110, 110) 100%
+    );
+    min-height: 40vh;
+}
+
+.navbar{
+    width: 100%;
+    height: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+font-size: 1.5rem;
+font-weight: bold;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+    padding: 5px 0;
+}
+
+.navbar .toggle{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.actionbtn{
+    background-color: #fff;
+    color: rgb(95, 158, 160);
+    padding: 0.4rem 1.5rem;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid rgb(54, 87, 88);
+    transition: scale 0.2 ease;
+}
+
+.actionbtn:hover{
+    background-color: cadetblue;
+    color: #fff;
+    border: 2px solid rgb(54, 87, 88);
+}
+
+.actionbtn:active{
+    scale: 0.95;
+}
+/* header fin */
+
+/* header 2 */
+.header-container{
+   padding: 70px 0;
+   display: flex;
+   align-items: center;
+}
+
+.header-text{
+    width: 50%;
+    padding-left: 17%;
+
+}
+
+.header-text h1{
+    font-size: 140px;
+    line-height: 150px;
+    color: #ffffff ;
+    margin-bottom: 25px;
+}
+
+p{
+    font-size: 18px;
+    color: black;
+    margin-bottom: 35px;
+    margin-left: 10px;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 13px 30px;
+    background-color: #ffffff;
+    color: cadetblue;
+    border-radius: 25px;
+    border: 2px solid #315253;
+    margin-left: 10px;
+}
+
+.btn-1:hover{
+    color: #ffffff ;
+    background-color: #315253;
+    border: 2px solid cadetblue ;
+}
+
+
+
+.header-img{
+    width: 50%;
+    text-align: center;
+    margin-left: 5%;
+}
+
+.header-img{
+    width: 55px;
+}
+
+/* fin header2 */
+
+/* dropdown menu */
+.dropdownmenu{
+    position: absolute;
+    right: 2rem;
+    top: 50px;
+    width: 300px;
+    background-color: rgba(78, 134, 136, 0.699);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 0;
+    transition: height .2 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdownmenu.open{
+    height: 240px;
+}
+
+.dropdownmenu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdownmenu .actionbtn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/* drop fin */
+
+/* carrousel proyecto */
+
+.card .img{
+    background: cadetblue;
+    width: 148px;
+    height: 148px;
+    border-radius: 50%;
+}
+
+.card .img img{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+
+}
+
+.card h2{
+    font-weight: 600;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+}
+
+.card .btnenter{
+    border-radius: 20px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    border: 3px solid rgb(71, 121, 122);
+    color: rgb(107, 174, 177);
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #fff;
+}
+
+.card .btnenter:hover{
+    border: 3px solid rgb(113, 184, 187) ;
+    color: #fff;
+    background: linear-gradient(
+        180deg,
+     rgb(118, 193, 196) 0%,
+     rgb(98, 160, 161) 51%,
+     rgb(66, 110, 110) 100%
+    );
+    cursor: pointer;
+    background-color: #315253;
+}
+
+
+.carousel :where(.card, .img){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.carousel .card{
+    scroll-snap-align: start;
+    height: 342px;
+    list-style: none;
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 15px;
+    
+    
+}
+
+.wrapper{
+    max-width: 1500px;
+    width: 100%;
+     position: absolute; 
+     top: 650px;
+}
+
+.wrapper i{
+    height: 50px;
+    width: 50px;
+    background: #fff;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+     top: 60%; 
+    font-size: 1.25rem;
+    transform: translateY(-50%);
+    box-shadow: 0 3px 6px rgba(78, 134, 136, 0.699);
+   
+}
+
+.wrapper i:first-child{
+    left:-22px;
+    
+}
+
+.wrapper .titulo{
+   margin: 20px 0;
+    text-align: center;
+}
+
+
+.wrapper i:last-child{
+    right: -22px;
+    float: right;
+    
+}
+
+.wrapper .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 4) - 12px);
+    gap: 16px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: 0;
+}
+
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+
+.carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging .card{
+    cursor: ew-resize ;
+    user-select: none;
+}
+
+.vertodo{
+    margin-top: 10px;
+    display: flex;
+    justify-content: end;
+    color: black;
+}
+
+
+
+/* fin carrousel */
+
+/* section */
+
+#blog{
+    position: absolute;
+   top: 1550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-bottom: 1px solid rgba(78, 134, 136, 0.699);
+}
+
+.blog-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blog-heading span{
+    color: #315253;
+}
+
+.blog-heading h3{
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.blog-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+    flex-wrap: wrap;
+}
+
+.blog-box{
+    width: 350px;
+    background-color: #fff;
+    border: 1px solid #ececec;
+    margin: 20px;
+}
+
+.blog-img{
+    width: 100%;
+    height: auto;
+}
+
+.blog-img img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.blog-text{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+}
+
+.blog-text span{
+    color: #315253;
+    font-size: 0.9rem;
+}
+
+.blog-text .blog-tittle{
+font-size: 1.3rem;
+font-weight: 500;
+color: #315253;
+}
+
+.blog-text .blog-tittle:hover{
+    color: cadetblue;
+    transition: all ease 0.3s;
+}
+
+.blog-text p{
+    color: #9b9b9b;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0;
+}
+
+.blog-text a{
+    color: #315253;
+}
+
+.blog-text a:hover{
+    color: cadetblue;
+    transition:  all ease 0.3s;
+}
+
+/* end section */
+
+/* responsive desing */
+
+
+
+
+@media(max-width: 992px){
+
+    .blog-box{
+        width: 300px;
+    }
+    .wrapper{
+        width: 95%;
+    }
+
+    .navbar .links,
+    .navbar .actionbtn{
+        display: none;
+    }
+
+    .navbar .toggle{
+        display: block;
+    }
+
+    .dropdownmenu {
+        display: block;
+    }
+
+    .header-text{
+
+        padding-left: 10%;
+    
+    }
+
+    .wrapper .carousel{
+        grid-auto-columns: calc((100% / 3) - 9px);
+    }
+}
+
+@media(max-width: 576px){
+
+   #blog{
+    padding: 0;
+   }
+
+    .blog-box{
+        width: 460px;
+        
+    }
+
+    .dropdownmenu{
+        left: 2rem;
+        width: unset;
+    }
+    .header-img{
+        display: none;
+    }
+    .header-text{
+        width: 90%;
+        padding-left: 10%;
+    
+    }
+
+    .wrapper .carousel{
+        grid-auto-columns: 100%;
+    }
+
+    .wrapper{
+        width: 90%;
+    }
+}
+/* responsive desing fin */
+
+/* hero */
+section#hero{
+    height: calc(100vh - 60px);
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#hero h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+

@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+a:hover{
+    color: rgb(41, 69, 70);
+}
+
+
+/* header */
+header{
+    position: absolute;
+    top: 0;
+    padding: 0.5rem;
+    background: cadetblue;
+    width: 100%;
+}
+
+header a{
+    color: #fff;
+}
+
+.navbar{
+    width: 100%;
+    height: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+font-size: 1.5rem;
+font-weight: bold;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+    padding: 5px 0;
+}
+
+.navbar .toggle{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.actionbtn{
+    background-color: #fff;
+    color: rgb(95, 158, 160);
+    padding: 0.4rem 1.5rem;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid rgb(54, 87, 88);
+    transition: scale 0.2 ease;
+}
+
+.actionbtn:hover{
+    background-color: cadetblue;
+    color: #fff;
+    border: 2px solid rgb(54, 87, 88);
+}
+
+.actionbtn:active{
+    scale: 0.95;
+}
+/* header fin */
+
+
+ 
+/* dropdown menu */
+.dropdownmenu{
+    position: absolute;
+    right: 2rem;
+    top: 50px;
+    width: 300px;
+    background-color: rgba(78, 134, 136, 0.699);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 0;
+    transition: height .2 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdownmenu.open{
+    height: 240px;
+}
+
+
+.dropdownmenu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdownmenu a{
+    color: #fff;
+}
+
+a.actionbtn{
+    color: cadetblue;
+}
+
+.dropdownmenu .actionbtn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/* drop fin */
+
+
+@media(max-width: 992px){
+
+
+ 
+
+    .navbar .links,
+    .navbar .actionbtn{
+        display: none;
+    }
+
+    .navbar .toggle{
+        display: block;
+    }
+
+    .dropdownmenu {
+        display: block;
+    }
+}
+
+
+@media(max-width: 576px){
+
+    .dropdownmenu{
+        left: 2rem;
+        width: unset;
+    }
+
+}
+/* responsive desing fin */
+

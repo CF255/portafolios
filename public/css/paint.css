@@ -1,0 +1,235 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(
+        180deg,
+        rgb(253, 255, 255)0%,
+     rgb(76, 163, 167) 51%,
+     rgb(167, 71, 68) 100%
+    );
+}
+
+.container-paint{
+    display: flex;
+    width: 100%;
+    max-width: 1050px;
+    gap: 10px;
+    padding: 10px;
+
+}
+
+section{
+    background-color: #fff;
+    border-radius: 7px;
+}
+
+.tools-board{
+    width: 210px;
+    padding: 15px 22px 0;
+}
+
+.tools-board .row{
+    margin-bottom: 20px;
+}
+
+.row .options{
+    list-style: none;
+    margin: 10px 0 0 5px;
+}
+
+.row .options .option{
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.option #fill-color{
+    height: 14px;
+    width: 14px;
+}
+
+#fill-color:checked ~ label{
+    color: rgb(30, 51, 53);
+
+}
+
+.option:is(:hover, .active) img{
+    filter: invert(17%) sepia(90%) saturate(3000%) hue-rotate(900deg) brightness(100%) contrast(100%);
+}
+
+.option:is(:hover, .active) :where(span, label){
+    color: rgb(30, 51, 53);
+}
+
+.option #size-slider{
+    width: 100%;
+    height: 5px;
+    margin-top: 10px;
+}
+
+.options .option img{
+    width: 25px;
+}
+
+.colors .options{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+
+
+
+.colors .option{
+    height: 20px;
+    width: 20px;
+    background: red;
+    border-radius: 50%;
+    margin-top: 3px;
+    position: relative;
+   
+}
+
+.colors .option:nth-child(1){
+    background-color: #fff;
+    border: 2px solid #6e6e6e;
+}
+.colors .option:nth-child(2){
+    background-color: #000000;
+}
+.colors .option:nth-child(3){
+    background-color: #d30000;
+    border: 2px solid #960000;
+}
+.colors .option:nth-child(4){
+    background-color: #8f4000;
+    border: 2px solid #550000;
+}
+
+.colors .option:nth-child(5){
+    background-color: #ff00bf;
+    border: 2px solid #960082;
+}
+
+.colors .option:nth-child(6){
+    background-color: #a400d6;
+    border: 2px solid #5c0074;
+}
+.colors .option:nth-child(7){
+    background-color: #00cec3;
+    border: 2px solid #006868;
+}
+
+.colors .option:nth-child(8){
+    background-color: #000fe7;
+    border: 2px solid #110070;
+}
+
+.colors .option:nth-child(9){
+    background-color: #fbff00;
+    border: 2px solid #c0b300;
+}
+
+.colors .option:nth-child(10){
+    
+    background-color: #ff9100;
+    border: 2px solid #a75e00;
+}
+
+.colors .option:nth-child(11){
+    background-color: #25e000;
+    border: 2px solid #008000;
+}
+
+.colors .option:nth-child(12){
+    background-image: url(/public/src/rainbow.png);
+    background-size: cover;
+    background-color: none;
+}
+
+
+
+
+.colors .option.selected::before{
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    background: inherit;
+    border-radius: inherit;
+    border: 2px solid #fff;
+    transform: translate(-50%, -50%);
+}
+
+.colors .option:first-child.selected::before{
+    border-color: #ccc;
+}
+
+.option :where(span, label){
+    color: rgb(73, 119, 121);
+    padding-left: 10px;
+    font-weight: 600;
+}
+
+.option #color-picker{
+    opacity: 0;
+    cursor: pointer;
+}
+
+.buttons button{
+    width: 100%;
+    color:#fff;
+    border: none;
+    padding: 11px 0;
+    margin-bottom: 13px;
+    background: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.buttons .clear-canvas{
+color: cadetblue ;
+border: 2px solid rgb(63, 104, 105);
+background-color: #FFF;
+
+}
+
+.buttons .clear-canvas:hover{
+    color:   #FFF ;
+    border: 2px solid cadetblue ;
+    background-color:rgb(63, 104, 105);
+
+    }
+
+.buttons .save-img:hover{
+    color: rgb(0, 161, 40) ;
+    border: 2px solid rgb(0, 97, 21);
+    background-color: #FFF;
+    }
+
+    
+.buttons .save-img{
+    color:   #FFF ;
+    border: 2px solid rgb(0, 90, 20);
+    background-color:rgb(0, 134, 34);
+
+    }
+
+.drawing-board{
+    flex: 1;
+}
+
+.drawing-board canvas{
+    width: 100%;
+    height: 100%;
+  cursor: pointer;
+}

@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+h2{
+	text-align:center;
+	color: black;
+}
+
+table{
+
+	width:60%;
+	margin: 1000px auto;
+	background-color:cadetblue;
+	border:solid 2px rgb(53, 87, 88);
+	padding:5px;
+	border-radius: 10px;
+	
+}
+
+#text-input{
+	margin-bottom: 20px;
+}
+
+td{
+	padding:5px 0;
+}
+
+.inputs{
+	width: 90%;
+	margin: 15px 0;
+}
+
+textarea{
+	width: 100%;
+
+}
+
+
+.btn{
+	padding: 10px 15px;
+	font-weight: 500;
+	font-size: 15px;
+	border-radius: 5px;
+	outline: none;
+	border: 2px solid rgb(44, 74, 75);
+	background-color: #fff;
+}
+
+.btn:hover{
+	background-color: #efefef;
+	cursor: pointer;
+}

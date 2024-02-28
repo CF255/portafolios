@@ -1,0 +1,75 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+/*     background-color: aqua; */
+
+}
+
+#board, .boardinfo{
+    max-width: 500px;
+}
+
+#board{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+#start, .boardinfo{
+    font-size: 25px;
+}
+
+
+#gameover{
+    display: none;
+}
+
+.boardinfo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+   
+}
+
+#start{
+    background-color: rgb(115, 179, 183);
+    border: none;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(36, 60, 61);
+}
+
+#start:hover{
+     color: white;
+     background-color: rgb(36, 60, 61) ;
+     border: 2px solid rgb(115, 179, 183) ;
+     cursor: pointer;
+
+}
+
+#scoreboard{
+    display: inline-flex;
+}
+
+.square{
+    aspect-ratio: 1;
+}
+
+.emptysquare{
+    background-color: cadetblue;
+   
+   
+}
+
+.snakesquare{
+    background-color: gold;
+}
+
+.foodsquare{
+    background-color: brown;
+}
+
+
