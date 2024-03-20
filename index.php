@@ -20,6 +20,7 @@
 https://cdn.jsdelivr.net/npm/swiper@9.4.1/modules/scrollbar/scrollbar.min.css
 " rel="stylesheet">
 </head>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, numquam architecto. Laudantium blanditiis culpa corporis quod dolorum harum. Repellat at quidem, error et velit magni illo repudiandae assumenda corrupti itaque?</p>
 <body>
     <header>
         <div class="navbar">
