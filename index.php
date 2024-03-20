@@ -20,7 +20,7 @@
 https://cdn.jsdelivr.net/npm/swiper@9.4.1/modules/scrollbar/scrollbar.min.css
 " rel="stylesheet">
 </head>
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, numquam architecto. Laudantium blanditiis culpa corporis quod dolorum harum. Repellat at quidem, error et velit magni illo repudiandae assumenda corrupti itaque?</p>
+
 <body>
     <header>
         <div class="navbar">
@@ -32,6 +32,9 @@ https://cdn.jsdelivr.net/npm/swiper@9.4.1/modules/scrollbar/scrollbar.min.css
                 <li><a href="#">others</a></li>
             </ul>
             <a href="#" class="actionbtn">Contact</a>
+            <button class="btnexpandir" id="btnexpandir" type="button">
+                <img class="imgexpandir" id="iconexpandir" src="public/src/expandir.png" alt="">
+            </button>
             <div class="toggle"><i class="fa-solid fa-bars"></i></div>
         </div>
 
@@ -41,6 +44,9 @@ https://cdn.jsdelivr.net/npm/swiper@9.4.1/modules/scrollbar/scrollbar.min.css
                 <li><a href="views/Formulario.php">blog</a></li>
                 <li><a href="#">others</a></li>
                 <li><a href="#" class="actionbtn">Contact</a></li>
+                <li><button class="btnexpandir" id="btnexpandir" type="button">
+                <img class="imgexpandir" id="iconexpandir" src="public/src/expandir.png" alt="">
+            </button></li>
         </div>
 
 

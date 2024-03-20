@@ -120,3 +120,16 @@ carouselweb.addEventListener("mousedown", dragStartweb);;
 carouselweb.addEventListener("mouseup", dragstopweb);
 carouselweb.addEventListener("mouseleave", dragstopweb);
 
+/* btn expandir */
+const btnexpandir = document.getElementById('btnexpandir');
+const iconexpandir = document.getElementById('iconexpandir');
+
+btnexpandir.addEventListener('click', ()=>{
+    if(!document.fullscreenElement){
+        document.documentElement.requestFullscreen();
+        iconexpandir.src = 'public/src/suprimir.png';
+    }else{
+        document.exitFullscreen();
+        iconexpandir.src = 'public/src/expandir.png';
+    }
+});

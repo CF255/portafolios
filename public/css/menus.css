@@ -61,6 +61,19 @@ font-weight: bold;
     display: none;
 }
 
+.btnexpandir{
+border: none;
+border-radius: 10px;
+cursor: pointer;
+padding: 5px;
+transition: scale 0.2 ease;
+}
+
+.imgexpandir{
+    width: 35px;
+    height: 35px;
+}
+
 .actionbtn{
     background-color: #fff;
     color: rgb(95, 158, 160);
@@ -83,6 +96,10 @@ font-weight: bold;
 .actionbtn:active{
     scale: 0.95;
 }
+
+.btnexpandir:active{
+    scale: 0.95;
+}
 /* header fin */
 
 
@@ -93,7 +110,7 @@ font-weight: bold;
     right: 2rem;
     top: 50px;
     width: 300px;
-    background-color: rgba(78, 134, 136, 0.699);
+    background-color: rgba(0, 0, 0, 0.699);
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
@@ -102,7 +119,7 @@ font-weight: bold;
 }
 
 .dropdownmenu.open{
-    height: 240px;
+    height: 300px;
 }
 
 
@@ -126,6 +143,12 @@ a.actionbtn{
     display: flex;
     justify-content: center;
 }
+
+.dropdownmenu .btnexpandir{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 /* drop fin */
 
 
@@ -135,7 +158,8 @@ a.actionbtn{
  
 
     .navbar .links,
-    .navbar .actionbtn{
+    .navbar .actionbtn,
+    .navbar .btnexpandir{
         display: none;
     }
 
