@@ -17,6 +17,7 @@ body{
     max-width: 1050px;
     gap: 10px;
     padding: 10px;
+    max-height: 1000px;
 
 }
 
@@ -145,12 +146,12 @@ section{
     border: 2px solid #008000;
 }
 
-.colors .option:nth-child(12){
+/* .colors .option:nth-child(12){
     background-image: url(/public/src/rainbow.png);
     background-size: cover;
     background-color: none;
 }
-
+ */
 
 
 

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content=" initial-scale=1.0">
+    
+    
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,7 +35,7 @@ https://cdn.jsdelivr.net/npm/swiper@9.4.1/modules/scrollbar/scrollbar.min.css
             </ul>
             <a href="#" class="actionbtn">Contact</a>
             <button class="btnexpandir" id="btnexpandir" type="button">
-                <img class="imgexpandir" id="iconexpandir" src="public/src/expandir.png" alt="">
+               <img class="imgexpandir" id="iconexpandir" src="public/src/expandir.png" alt=""> 
             </button>
             <div class="toggle"><i class="fa-solid fa-bars"></i></div>
         </div>
@@ -45,7 +47,7 @@ https://cdn.jsdelivr.net/npm/swiper@9.4.1/modules/scrollbar/scrollbar.min.css
                 <li><a href="#">others</a></li>
                 <li><a href="#" class="actionbtn">Contact</a></li>
                 <li><button class="btnexpandir" id="btnexpandir" type="button">
-                <img class="imgexpandir" id="iconexpandir" src="public/src/expandir.png" alt="">
+            <img class="imgexpandir" id="iconexpandir" src="public/src/expandir.png" alt=""> 
             </button></li>
         </div>
 
@@ -118,8 +120,13 @@ https://cdn.jsdelivr.net/npm/swiper@9.4.1/modules/scrollbar/scrollbar.min.css
                     <h2>Lista de tareas</h2>
                     <a href="views/listatarea.html" class="btnenter">ENTER</a>
                 </li>
+                <li class="card">
+                    <div class="img"><img src="public/src/ahorcado.png" alt="img" draggable="false"></div>
+                    <h2>Ahorcado</h2>
+                    <a href="views/ahorcado.html" class="btnenter">ENTER</a>
+                </li>
             </ul>
-            <a href="views/vermasapp.html" class="vertodo">ver mas...</a>
+            <a href="views/vermasapp.html" class="vertodo">ver todo...</a>
             <i id="rigth" class="fa-solid fa-angle-right"></i>
 
             
@@ -128,7 +135,7 @@ https://cdn.jsdelivr.net/npm/swiper@9.4.1/modules/scrollbar/scrollbar.min.css
     <!-- fin carrousel proyects -->
 
     <!-- carrousel paginas -->
-
+<!-- 
         
     <div class="wrapperweb">
 
@@ -146,7 +153,7 @@ https://cdn.jsdelivr.net/npm/swiper@9.4.1/modules/scrollbar/scrollbar.min.css
         <i id="rightweb" class="fa-solid fa-angle-right"></i>
     </div>
 
-
+ -->
     <!-- fin carrousel pagina -->
 
 <!-- BLOG -->
@@ -212,81 +219,14 @@ https://cdn.jsdelivr.net/npm/swiper@9.4.1/modules/scrollbar/scrollbar.min.css
 
 ?>
 
+
+
 </div'>
 </section>
 
 
-    <!--   <section id="blog">
+<script type="text/javascript" src="public/js/index.js"></script> 
 
-            <div class="blog-heading">
-                <span>Post</span>
-                <h3>My blog</h3>
-            </div>
-
-            <div class="blog-container">
-
-                <div class="blog-box">
-                    <div class="blog-img">
-                        <img src="public/src/section1.png" alt="">
-                    </div>
-
-                    <div class="blog-text">
-                        <span>19 june 2023 / Web Desing</span>
-                        <a href="#" class="blog-tittle">Anime Blog</a>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga officia at, sunt aperiam aliquid doloremque distinctio veniam illo similique nisi blanditiis est recusandae et quo vitae, suscipit placeat voluptates vero!</p>
-                    
-                        <a href="#">Read more...</a>
-                    </div>
-                </div>
-
-                <div class="blog-box">
-                    <div class="blog-img">
-                        <img src="public/src/section2.jpg" alt="">
-                    </div>
-
-                    <div class="blog-text">
-                        <span>19 june 2023 / Web Desing</span>
-                        <a href="#" class="blog-tittle">VideoGames Blog</a>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga officia at, sunt aperiam aliquid doloremque distinctio veniam illo similique nisi blanditiis est recusandae et quo vitae, suscipit placeat voluptates vero!</p>
-                    
-                        <a href="#">Read more...</a>
-                    </div>
-                </div>
-
-                <div class="blog-box">
-                    <div class="blog-img">
-                        <img src="public/src/section3.jpg" alt="">
-                    </div>
-
-                    <div class="blog-text">
-                        <span>19 june 2023 / Web Desing</span>
-                        <a href="#" class="blog-tittle">Figure Blog</a>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga officia at, sunt aperiam aliquid doloremque distinctio veniam illo similique nisi blanditiis est recusandae et quo vitae, suscipit placeat voluptates vero!</p>
-                    
-                        <a href="#">Read more...</a>
-                    </div>
-                </div>
-
-                <div class="blog-box">
-                    <div class="blog-img">
-                        <img src="public/src/section4.jpg" alt="">
-                    </div>
-
-                    <div class="blog-text">
-                        <span>19 june 2023 / Web Desing</span>
-                        <a href="#" class="blog-tittle">Console Blog</a>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga officia at, sunt aperiam aliquid doloremque distinctio veniam illo similique nisi blanditiis est recusandae et quo vitae, suscipit placeat voluptates vero!</p>
-                    
-                        <a href="#">Read more...</a>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-  
-   -->
-    <script src="public/js/index.js"></script>
 
 </body>
 </html>

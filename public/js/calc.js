@@ -4,6 +4,7 @@ const botonesnumeros = document.querySelectorAll(".numero");
 const botonesoperadores = document.querySelectorAll(".operador");
 
 
+
 const display = new Display(displayvaloranterior, displayvaloractual);
 
 botonesnumeros.forEach(boton =>{

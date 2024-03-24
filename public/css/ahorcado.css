@@ -1,0 +1,66 @@
+*{
+    font-family: 'SF Pixelate', sans-serif;
+    font-family: 'SF Pixelate Shaded', sans-serif; 
+
+
+      
+}
+
+html{
+    height: 100%;
+}
+
+body{ 
+    height: 100%;
+    background-image: linear-gradient(155deg, #ff71f9 0, #ff6bf8 12.5%, #ff64f0 25%, #dd5ce1 37.5%, #ad50cc 50%, #7f44b4 62.5%, #55399e 75%, #2d3089 87.5%, #002978 100%);    
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden{
+    color:transparent
+}
+
+
+#wordContainer{
+    margin-top: 20;
+    font-family: 'SF Pixelate', sans-serif;
+    font-family: 'SF Pixelate Shaded', sans-serif;
+
+}
+
+.letter{
+    margin: 0 7px;
+    position: relative;
+    text-align: center;
+}
+
+.letter::after{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    min-width: 12px;
+}
+
+#startButton{
+    margin-top: 20px;
+    appearance: none;
+    font-family: 'SF Pixelate', sans-serif;
+    font-family: 'SF Pixelate Shaded', sans-serif;
+
+    border: none;
+    width: 300px;
+    padding: 10px;
+    color: #d95d39;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}

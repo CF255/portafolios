@@ -2,7 +2,8 @@ const togglebtn = document.querySelector('.toggle');
 const togglebtnicon = document.querySelector('.toggle i');
 const dropdownmenu = document.querySelector('.dropdownmenu');
 
-
+console.log('si')
+alert('si')
 
 togglebtn.onclick = function(){
     dropdownmenu.classList.toggle('open');
@@ -17,20 +18,10 @@ togglebtn.onclick = function(){
 const carousel = document.querySelector(".carousel");
 const arrowbtns = document.querySelectorAll(".wrapper i");
 const firstCarwidth = carousel.querySelector(".card").offsetWidth;
-/* const carouselChildrens = [...carousel.children]; */
 
 let isDragging = false, startX, startScrollLeft;
 
-/* let cardPerView =  Math.round(carousel.offsetWidth / firstCarwidth);
- */
-/* carouselChildrens.slice(-cardPerView).reverse().forEach(card =>{
-    carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
-}); */
 
-/* carouselChildrens.slice(0, cardPerView).forEach(card => {
-    carousel.insertAdjacentHTML("beforeend", card.outerHTML);
-});
-  */
 arrowbtns.forEach(btn =>{
     btn.addEventListener("click", ()=>{
         carousel.scrollLeft += btn.id === "left" ? - firstCarwidth : firstCarwidth;
@@ -55,19 +46,10 @@ const dragStop = () =>{
     carousel.classList.remove("dragging");
 }
 
-/* const infiniteScroll= () =>{
-    if(carousel.scrollLeft === 0){
-        console.log("si")
-    }else if (Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth){
-        console.log("no")
-    }
-}
- */
+
 carousel.addEventListener("mousedown", dragStart);
 carousel.addEventListener("mousemove", dragging);
 document.addEventListener("mouseup", dragStop);
-/* carousel.addEventListener("scroll", infiniteScroll); */
-
 
 
 /* carrousel web */
