@@ -1,0 +1,49 @@
+body{
+    background-image: linear-gradient(165deg, #78a8c0 0, #75a5b8 6.25%, #73a0ae 12.5%, #729ba3 18.75%, #719498 25%, #718c8d 31.25%, #718382 37.5%, #707978 43.75%, #6e6e6e 50%, #6b6366 56.25%, #675a60 62.5%, #62515c 68.75%, #5d4a5a 75%, #564559 81.25%, #504058 87.5%, #483d59 93.75%, #403b59 100%);
+    height: 100%;
+    top: 200px;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-weight: bold;
+    padding-top: 20px ;
+}
+
+html{
+    height: 100%;
+}
+
+#palleteContainer{
+    width: 520px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.palleteItem{
+    transition: background-color .5s;
+}
+
+.palleteItem span{
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    display: inline-block;
+    min-width: 100px;
+}
+
+button{
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    background: black;
+}

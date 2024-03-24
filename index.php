@@ -125,6 +125,11 @@ https://cdn.jsdelivr.net/npm/swiper@9.4.1/modules/scrollbar/scrollbar.min.css
                     <h2>Ahorcado</h2>
                     <a href="views/ahorcado.html" class="btnenter">ENTER</a>
                 </li>
+                <li class="card">
+                    <div class="img"><img src="public/src/paletadecolores.png" alt="img" draggable="false"></div>
+                    <h2>Paleta de Colores</h2>
+                    <a href="views/paletadecolores.html" class="btnenter">ENTER</a>
+                </li>
             </ul>
             <a href="views/vermasapp.html" class="vertodo">ver todo...</a>
             <i id="rigth" class="fa-solid fa-angle-right"></i>

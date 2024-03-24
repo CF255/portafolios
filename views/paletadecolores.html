@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../public/css/menus.css">
+    <link rel="stylesheet" href="../public/css/paletadecolores.css">
+</head>
+<body>
+    
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Personal Blog</a></div>
+            <ul class="links">
+                <li><a href="../index.php">Home</a></li>
+                <li><a href="#">Proyects</a></li>
+                <li><a href="#">others</a></li>
+                <li><a href="#">others</a></li>
+            </ul>
+            <a href="#" class="actionbtn">Contact</a>
+            <div class="toggle"><i class="fa-solid fa-bars"></i></div>
+        </div>
+
+        <div class="dropdownmenu">
+            <li><a href="../index.php">Home</a></li>
+                <li><a href="#">Proyects</a></li>
+                <li><a href="#">others</a></li>
+                <li><a href="#">others</a></li>
+                <li><a href="#" class="actionbtn">Contact</a></li>
+        </div>
+    </header>
+
+    <div>
+        <div id="palleteContainer"></div>
+        <button onclick="updatePallete()">Generar paleta</button>
+    </div>
+    
+
+
+
+    <script src="../public/js/menus.js"></script>
+    <script src="../public/js/paletadecolores.js"></script>
+   
+</body>
+</html>
